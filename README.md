@@ -6,4 +6,4 @@
 * Get the total difference between times in hours, minutes and seconds.
 * The program is useful for managing time and scheduling activities in an accurate and fast way!
   ### deploye
-  ** https://timecalculator-chi.vercel.app/
+  * https://timecalculator-chi.vercel.app/
