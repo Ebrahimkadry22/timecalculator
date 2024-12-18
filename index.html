@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Time Calculator</title>
+</head>
+<body>
+
+  <div class="time">
+    <div class="container">
+      <h1 class="title" id="title">حاسبة الفرق بين الوقتين</h1>
+  
+      <select id="language">
+        <option value="ar">ar</option>
+        <option value="en">en</option>
+      </select>
+  
+      <form id="timeCalculator">
+        <div class="time-format">
+          <label id="timeFormatLabel">اختر نظام الوقت</label>
+          <select id="timeformat">
+            <option value="12" selected>نظام 12 ساعة</option>
+            <option value="24">نظام 24 ساعة</option>
+          </select>
+        </div>
+  
+        <div id="timeInputsContainer">
+          <div class="time-block">
+            <h3>الوقت 1</h3>
+            <input type="number" class="hour-input" min="0" max="23" placeholder="ساعة" required>
+            <input type="number" class="minute-input" min="0" max="59" placeholder="دقيقة" required>
+            <input type="number" class="second-input" min="0" max="59" placeholder="ثانية" required>
+            <select class="time-period">
+              <option value="AM">صباحا</option>
+              <option value="PM">مساء</option>
+            </select>
+          </div>
+  
+          <div class="time-block">
+            <h3>الوقت 2</h3>
+            <input type="number" class="hour-input" min="0" max="23" placeholder="ساعة" required>
+            <input type="number" class="minute-input" min="0" max="59" placeholder="دقيقة" required>
+            <input type="number" class="second-input" min="0" max="59" placeholder="ثانية" required>
+            <select class="time-period">
+              <option value="AM">صباحا</option>
+              <option value="PM">مساء</option>
+            </select>
+          </div>
+        </div>
+  
+        <button type="button" id="addTime">إضافة وقت جديد</button>
+        <button id="calculateButton" type="submit">احسب الفرق</button>
+      </form>
+  
+      <p class="result" id="result"></p>
+    </div>
+  </div>
+  
+
+<script src="js/script.js"></script>
+</body>
+</html>

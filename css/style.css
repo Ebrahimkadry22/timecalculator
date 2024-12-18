@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../fonts/Quicksand/Quicksand-VariableFont_wght.ttf')format('turetype');
+  font-weight: normal;
+  font-style: normal;
+
+
+}
+body {
+  background-image: linear-gradient(90deg, #051367, #1C0A00);
+  padding: 20px;
+  color: #ededed;
+  font-family: 'Quicksand',sans-serif;
+}
+.time {
+  height: calc(95vh - 10px);
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.container {
+  position: relative;
+  text-align: center;
+  width: 550px;
+  margin: auto;
+  background: #1a0a03;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+  
+}
+#language {
+  position: absolute;
+  top: 3%;
+  right: 2%;
+  width:60px;
+  height: 35px;
+  font-size: 1rem;
+
+}
+.title {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #ededed;
+  display: inline-block;
+  color: #051367;
+  padding: 0.5rem;
+  border-radius: .7rem;
+}
+h3 {
+  text-align: right;
+  margin-bottom: 5px;
+  margin-right: 5rem;
+  font-size: .9rem;
+}
+#timeFormatLabel {
+  font-weight:bolder;
+  font-size: 1rem;
+  
+}
+label  {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+select , input {
+  max-width: 200px;
+  color: rgb(40 32 32);
+}
+select ,  input , button {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+  font-size: 16px;
+}
+#addTime {
+  background-color: #051367;
+  color: #ededed;
+}
+#addTime:hover {
+  background-color: #ededed;
+  color: #051367;
+}
+button {
+  background-color: #ededed;
+  color: #051367;
+   font-weight: bold;
+   width: 68%;
+   cursor: pointer;
+   transition: all  .3s ease-in-out;
+}
+button:hover {
+  background-color: #051367;
+  color: #ededed;
+}
+.result {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
+}
